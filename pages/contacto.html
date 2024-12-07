@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Contactate con Patitas</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulop">
+            Patitas a la obra
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/carrito.html">Carrito</a></li>
+                <li><a href="../pages/registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h2>Contactate con nosotros</h2>
+            <div class="formulario-box">
+            <form action="https://formspree.io/f/mvgoobgr" method="POST">
+                <div class="nombre-apellido-container">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="15" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Patitas a la obra Web. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="../pages/terminos.html">Términos de Servicio</a></li>
+                    <li><a href="../pages/privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
