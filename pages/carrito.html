@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Carrito de Patitas</title>
 </head>
-
 <body>
     <header>
-        <h1 class="titulop">
-            Patitas a la obra
-        </h1>
+        <h1 class="titulop">Patitas a la obra</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -26,48 +19,18 @@
         </nav>
     </header>
     <main>
-        <div class="h2centro">
-            <h2 class="h2carrito">
-                Tu carrito de patitas
-            </h2>
+        <h2>Tu carrito de compras</h2>
+        <div id="carrito-container">
+            <!-- Aquí se generará dinámicamente el contenido del carrito -->
         </div>
-        <section class="carrito">
-            <form action="https://formspree.io/f/mvgoobgr" method="POST">
-                
-                <section class="producto">
-                    <label>
-                        <img src="../img/bolsita.jpg" alt="Producto 1">
-                        <span>Golosinas c/u $100</span>
-                    
-                    <input type="number" name="cantidad_golosinas" min="0" value="0" class="cantidad">
-                </label>
-                </section>
-    
-                <section class="producto">
-                    <label>
-                        <img src="../img/hueso.jpg" alt="Producto 2">
-                        <span>Huesos c/u $150</span>
-                        <input type="number" name="cantidad_huesos" min="0" value="0" class="cantidad">
-                    </label>
-                   
-                </section>
-    
-                <button type="submit" class="btn-enviar">Enviar Pedido</button>
-            </form>
-        </section>
+        <div id="carrito-total">
+            <!-- Aquí se mostrará el total -->
+        </div>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
     </main>
     <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Patitas a la obra Web. Todos los derechos reservados.</p>
-            <nav>
-                <ul>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="../pages/terminos.html">Términos de Servicio</a></li>
-                    <li><a href="../pages/privacidad.html">Política de Privacidad</a></li>
-                </ul>
-            </nav>
-        </div>
+        <p>&copy; 2024 Patitas a la obra Web. Todos los derechos reservados.</p>
     </footer>
+    <script src="../JS/carrito.js"></script>
 </body>
-
 </html>
