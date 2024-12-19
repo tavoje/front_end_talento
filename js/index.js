@@ -10,7 +10,10 @@ fetch('../JS/productos.json')
           <img src="../IMG/${producto.imagen}" alt="${producto.nombre}">
           <h3>${producto.nombre}</h3>
           <p>Precio: ${producto.precio}</p>
-          <p>Cantidad: ${producto.cantidad}</p>
+          <p>Cantidad: 
+            <input type="number" class="cantidad" value="1" min="1">
+          </p>
+          <button class="agregar-al-carrito">Agregar al carrito</button>
         </div>
       `;
       productosHTML.innerHTML += productoHTML;
