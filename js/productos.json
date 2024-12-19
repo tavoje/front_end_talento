@@ -3,42 +3,36 @@
         "id": 1,
         "nombre": "Cepillo",
         "precio": 100,
-        "imagen": "../IMG/cepillo.jpeg",
-        "cantidad": 1
+        "imagen": "../IMG/cepillo.jpeg"
     },
     {
         "id": 2,
         "nombre": "Collar",
         "precio": 150,
-        "imagen": "../IMG/collar.jpeg",
-        "cantidad": 1
+        "imagen": "../IMG/collar.jpeg"
     },
     {
         "id": 3,
         "nombre": "Cuerda",
         "precio": 80,
-        "imagen": "../IMG/cuerda.jpeg",
-        "cantidad": 1
+        "imagen": "../IMG/cuerda.jpeg"
     },
     {
         "id": 4,
         "nombre": "Plato",
         "precio": 200,
-        "imagen": "../IMG/plato.jpeg",
-        "cantidad": 1
+        "imagen": "../IMG/plato.jpeg"
     },
     {
         "id": 5,
         "nombre": "Rociador",
         "precio": 120,
-        "imagen": "../IMG/rociador.jpeg",
-        "cantidad": 1
+        "imagen": "../IMG/rociador.jpeg"
     },
     {
         "id": 6,
         "nombre": "Transportadora",
-        "precio": 300,
-        "imagen": "../IMG/transportadora.jpeg",
-        "cantidad": 1
+        "precio": 500,
+        "imagen": "../IMG/transportadora.jpeg"
     }
 ]

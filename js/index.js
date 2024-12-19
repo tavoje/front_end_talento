@@ -1,19 +1,19 @@
-const reseñas = document.querySelector('.reseñas');
-const reseñasArray = Array.from(reseñas.children);
-const interval = 3000; // tiempo en milisegundos entre cada deslizamiento
+fetch('../JS/productos.json')
+  .then(response => response.json())
+  .then(data => {
+    const productos = data;
+    const productosHTML = document.querySelector('.shop .row');
 
-let currentIndex = 0;
-
-function deslizar() {
-  reseñas.style.transform = `translateX(-${reseñas.clientWidth * currentIndex}px)`;
-}
-
-function deslizarAutomático() {
-  currentIndex++;
-  if (currentIndex >= reseñasArray.length) {
-    currentIndex = 0;
-  }
-  deslizar();
-}
-
-setInterval(deslizarAutomático, interval);
+    productos.forEach(producto => {
+      const productoHTML = `
+        <div class="col-md-4">
+          <img src="../IMG/${producto.imagen}" alt="${producto.nombre}">
+          <h3>${producto.nombre}</h3>
+          <p>Precio: ${producto.precio}</p>
+          <p>Cantidad: ${producto.cantidad}</p>
+        </div>
+      `;
+      productosHTML.innerHTML += productoHTML;
+    });
+  })
+  .catch(error => console.error('Error:', error));
