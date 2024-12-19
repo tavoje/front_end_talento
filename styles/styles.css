@@ -139,9 +139,9 @@ footer nav ul li a:hover {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 .shop h2 {
-    text-align: center; /* Centra el texto */
-    font-size: 30px; /* Aumenta el tamaño de la fuente */
-    margin-bottom: 20px; /* Agrega un margen inferior para separar el título del contenido */
+    text-align: center;
+    font-size: 30px; 
+    margin-bottom: 20px;
     background-color: #9de3eccb;
     padding: 25px;
   }
@@ -310,7 +310,6 @@ footer nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Estilos específicos del formulario */
 .contacto form {
     display: flex;
     flex-direction: column;
@@ -342,7 +341,7 @@ footer nav ul li a:hover {
 }
 
 .contacto form .nombre-apellido-container input[type="text"] {
-    width: 48%; /* Ajusta el ancho de los campos de nombre y apellido */
+    width: 48%;
 }
 
 .contacto form textarea {
@@ -472,4 +471,113 @@ footer nav ul li a:hover {
         font-size: 0.9rem;
         padding: 8px 12px;
     }
+}
+.privacidad-body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4d5;
+    color: #333;
+}
+
+.privacidad-header {
+    background-color: #007BFF;
+    color: rgba(255, 255, 255, 0.76);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.privacidad-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.privacidad-main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.808);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.privacidad-section {
+    margin-bottom: 2em;
+}
+
+.privacidad-section h2 {
+    color: #007BFF;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.privacidad-section p, .privacidad-section ul {
+    margin: 0.5em 0;
+}
+
+.privacidad-section ul {
+    padding-left: 1.5em;
+}
+
+.privacidad-section ul li {
+    margin-bottom: 0.5em;
+}
+@media (max-width: 768px) {
+    .privacidad-main {
+        padding: 1em;
+    }
+
+    .privacidad-header h1 {
+        font-size: 1.5em;
+    }
+
+    .privacidad-section h2 {
+        font-size: 1.2em;
+    }
+}
+.terminos-body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.terminos-header {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.terminos-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.terminos-main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terminos-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.terminos-section h2 {
+    color: #ff7043;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.terminos-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
 }
