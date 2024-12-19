@@ -151,20 +151,39 @@ footer nav ul li a:hover {
     color: aqua;
 }
 
-.reseñas {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 20px auto;
+.reseñas-container {
+    position: relative;
+  }
+  
+  .btn-izquierda, .btn-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 18px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-izquierda {
+    left: 0;
+  }
+  
+  .btn-derecha {
+    right: 0;
+  }
+  
+  .reseñas {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    transition: transform 0.5s ease-in-out;
-    overflow: hidden;
+    align-items: center;
+    margin: 20px auto;
     max-width: 1200px;
   }
-
-  .reseñas.animate {
-  transform: translateX(-100%);
-}
+  
   .reseñas h2 {
     padding: 20px;
     background-color: #664b6ece;
@@ -177,17 +196,25 @@ footer nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
-    border: 0.5px solid black;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .reseña:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .reseña h3 {
     font-size: 1.2em;
-    color: #333;
+    color: #000;
+    font-weight: bold;
   }
   
   .reseña p {
     font-size: 1em;
-    color: #555;
+    color: #000;
+    
   }
   
   @media (max-width: 768px) {
